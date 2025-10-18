@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_black"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp"
+    tools:context="com.example.signallingproject2.SignInActivity">
+
+    <TextView
+        android:text="Sign In"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/light_purple"
+        android:layout_marginBottom="40dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="14dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/grey_text"
+        android:backgroundTint="@color/dark_purple" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:drawableStart="@android:drawable/ic_lock_lock"
+        android:inputType="textPassword"
+        android:padding="14dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/grey_text"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/dark_purple" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/light_purple"
+        android:layout_marginTop="32dp" />
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/dark_purple"
+        android:layout_marginTop="16dp" />
+</LinearLayout>
